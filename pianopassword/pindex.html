@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pstyle.css">
+    <link rel="stylesheet" href="piano.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- main container -->
+    <div class="container">
+        <!-- heasing content -->
+        <div class="heading">
+            <h1 id="head">
+                Create Your Password
+            </h1>
+        </div>
+        <!-- form content down here -->
+        <div class="texting">
+            <form action="" method="get" class="myform">
+                <div class="tags">
+                    <label for="Username" id="Username"  class="rebel">
+                        Username
+                    </label>
+                    <input type="text" id="name">
+                </div>
+                <div class="tags">
+                    <label for="password" id="password" class="rebel">
+                        Password
+                    </label>
+                    <div id="pianopassword" class="container-pass">
+                        <div id="pass" class="passwordInput">
+
+                        </div>
+
+                    </div>
+
+                    <!-- piano html down here -->
+                    <div class="peop piano1" id="pin1">
+                        <div>
+                            <div class="top">
+                                <div class="keys">
+                                    <div class="piano"> Playable Piano</div>
+                                    <div class="keys-checkbox"><label for="check">Show keys</label>
+                                        <input type="checkbox" class="getAccess">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Volume">
+                                <label for="range">Volume</label>
+                                <input type="range" id="range" max="1" min="0" value="0.5" step="any">
+                            </div>
+                            <div ><input type="text" class="seen saw"></div>
+                        </div>
+                           <!-- keys down here -->
+                        <ul class="bottom">
+                            <li class="win white" data-win="A">A</li>
+                            <li class="win black" data-win="B">B</li>
+                            <li class="win white" data-win="C">C</li>
+                            <li class="win black" data-win="D">D</li>
+                            <li class="win white" data-win="E">E</li>
+                            <li class="win white" data-win="F">F</li>
+                            <li class="win black" data-win="G">G</li>
+                            <li class="win white" data-win="H">H</li>
+                            <li class="win black" data-win="I">I</li>
+                            <li class="win white" data-win="J">J</li>
+                            <li class="win black" data-win="K">K</li>
+                            <li class="win white" data-win="L">L</li>
+                            <li class="win white" data-win="M">M</li>
+                            <li class="win black" data-win="N">N</li>
+                            <li class="win white" data-win="O">O</li>
+                            <li class="win black" data-win="P">P</li>
+                            <li class="win white" data-win="Q">Q</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="tags">
+                    <label for="confirmPassword" id="confirmpassword" class="rebel">
+                        Confirm Password
+                    </label>
+                    <div id="pianopassword" class="container-pass1">
+                        <div id="space1" class="space">
+
+                        </div>
+                    </div>
+                     <!-- piano html down here -->
+                    <div class="peop piano1" id="pin2">
+                        <div>
+                            <div class="top">
+                                <div class="keys">
+                                    <div class="piano"> Playable Piano</div>
+                                    <div class="keys-checkbox"><label for="check">Show keys</label>
+                                        <input type="checkbox">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Volume">
+                                <label for="range">Volume</label>
+                                <input type="range" id="range" max="1" min="0" value="0.5" step="any">
+                            </div>
+                            <div ><input type="text" class="seen saw2"></div>
+                        </div>
+                        <!-- keys down here -->
+                        <ul class="bottom">
+                            <li class="win white" data-win="A">A</li>
+                            <li class="win black" data-win="B">B</li>
+                            <li class="win white" data-win="C">C</li>
+                            <li class="win black" data-win="D">D</li>
+                            <li class="win white" data-win="E">E</li>
+                            <li class="win white" data-win="F">F</li>
+                            <li class="win black" data-win="G">G</li>
+                            <li class="win white" data-win="H">H</li>
+                            <li class="win black" data-win="I">I</li>
+                            <li class="win white" data-win="J">J</li>
+                            <li class="win black" data-win="K">K</li>
+                            <li class="win white" data-win="L">L</li>
+                            <li class="win white" data-win="M">M</li>
+                            <li class="win black" data-win="N">N</li>
+                            <li class="win white" data-win="O">O</li>
+                            <li class="win black" data-win="P">P</li>
+                            <li class="win white" data-win="Q">Q</li>
+                        </ul>
+                    </div>
+                   
+                </div>
+               
+                <!-- submit button down here -->
+
+                <div class="tags">
+                    <input type="submit" value="Finish &#x1f4af" id="finish">
+                </div>
+
+
+            </form>
+            <!-- password issue alert div down here -->
+        </div>
+        <span  id="stress"></span>
+    </div>
+    
+    <script src="papp.js" defer></script>
+    <script src="piano.js"></script>
+</body>
+
+</html>

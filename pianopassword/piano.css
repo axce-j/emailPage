@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    width: 100%;
+}
+/* styles for first halff side of the piano */
+.top {
+    display: inline-flex;
+    color: #f5f2f2;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+/* styles for all divs in the top div */
+.top > div {
+    margin-bottom: 10px;
+}
+/* playable piano class */
+.piano {
+    display: inline-flex;
+    align-self: flex-end;
+}
+/* slider show key styles */
+.keys-checkbox input {
+    height: 30px;
+    width: 60px;
+    border-radius: 50px;
+    cursor: pointer;
+    appearance: none;
+    position: relative;
+    background: #4B4B4B;
+}
+/* slider before state style */
+.keys-checkbox input::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #8c8c8c;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+/* slider checked state */
+.keys-checkbox input:checked::before {
+    left: 35px;
+    background: #fff;
+}
+/* slider label */
+.keys label {
+    display: inline;
+}
+/* slider for keys class */
+.keys {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+/* volume class styles */
+.Volume {
+    display: flex;
+    align-items: center;
+}
+/* volume label style */
+.Volume label {
+    display: flex;
+    justify-content: center;
+}
+/* styles for input volume */
+.Volume input {
+    accent-color: rgba(39, 183, 171, 0.284);
+}
+/* range id style of volume */
+#range {
+    display: grid;
+    width: 80%;
+}
+/* volume input type style */
+input[type='range'] {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+/* bottom class or the piano keys style */
+.bottom {
+    margin-top: 6%;
+    margin-bottom: 20%;
+    display: inline-flex;
+    cursor: pointer;
+    user-select: none;
+}
+/* list styles */
+li{
+    padding-bottom: 1.8%;
+}
+/* black classed piano keys */
+.black{
+    width: 50px;
+    height: 120px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 400;
+    background: black;
+    z-index: 2;
+   margin: 0px -24px 0px -24px;
+    color: white;
+    border-radius: 0px 0px 5px 5px;
+    align-content: end;
+}
+/* black classs keys active state */
+.black:active{
+    box-shadow: inset -5px 5px 20px rgba(8, 94, 80, 0.927);
+    background: linear-gradient(to bottom, rgb(28, 40, 45) ,rgba(170, 112, 112, 0.992));
+}
+/* white classed piano keys */
+.white {
+    width: 65px;
+    height: 175px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 400;
+    background: white;
+    border-radius: 9px;
+    border: 1px solid black;
+    color: black;
+    align-content: end;
+}
+/* white class keys active state */
+.white:active{
+    box-shadow: inset -5px 5px 20px rgba(22, 21, 21, 0.433);
+    background: linear-gradient(to bottom, rgb(255, 253, 253) ,rgb(201, 197, 197));
+}
+/* seen class for input type text styles */
+.seen{
+    background-color: rgb(220, 211, 211);
+    border: 2px solid black;
+    border-radius: 12px;
+    width: 44vw;
+    margin-top: 2%;
+    height: 6vh;
+    display: flex;
+    justify-self: center;
+    color: hsl(237, 74%, 30%);
+}
