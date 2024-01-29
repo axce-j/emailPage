@@ -28,9 +28,9 @@ function end(event) {
         pword.value = "";
         secWord.value = "";
   } else {
-    let relativePath = "/newsletter-sign-up-with-success-message-main/success.html";
-    window.location.href = window.location.origin + relativePath + "?email=" + encodeURIComponent(email);
-}
+        let url = `success.html?email=${encodeURIComponent(email)}`;
+        window.location.href = url;
+    }
 }
 
 // Logic to prevent default input functions
