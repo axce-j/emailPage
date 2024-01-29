@@ -28,7 +28,7 @@ function end(event) {
         pword.value = "";
         secWord.value = "";
   } else {
-        let url = `success.html?email=${encodeURIComponent(email)}`;
+        let url = `../success.html?email=${encodeURIComponent(email)}`;
         window.location.href = url;
     }
 }
