@@ -27,10 +27,10 @@ function end(event) {
         stress.textContent = "Passwords do not match";
         pword.value = "";
         secWord.value = "";
-    } else {
-        let url = `file:///C:/Users/johno/Desktop/web%20dev%20projects/newsletter-sign-up-with-success-message-main/newsletter-sign-up-with-success-message-main/success.html?email=${encodeURIComponent(email)}`;
-        window.location.href = url;
-    }
+   } else {
+    let relativePath = "/newsletter-sign-up-with-success-message-main/success.html";
+    window.location.href = window.location.origin + relativePath + "?email=" + encodeURIComponent(email);
+}
 }
 
 // Logic to prevent default input functions
