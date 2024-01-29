@@ -27,7 +27,7 @@ function end(event) {
         stress.textContent = "Passwords do not match";
         pword.value = "";
         secWord.value = "";
-   } else {
+  } else {
     let relativePath = "/newsletter-sign-up-with-success-message-main/success.html";
     window.location.href = window.location.origin + relativePath + "?email=" + encodeURIComponent(email);
 }
