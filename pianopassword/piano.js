@@ -32,11 +32,15 @@ pianokeys.forEach(win =>{
   });
 //   function for keyboard press
   const pressedKey = (e) => {
-    // condition for click only if the piano is popped out
-           if (piano.style.display === "grid" || pin2.style.display === "grid") {
-        playTune(e.key);
-    }
+  // Ensure that the function will work only for specific characters
+  const validCharacters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q'];
+  
+  // Condition for click only if the piano is popped out and the key is valid
+  if ((piano.style.display === "grid" || pin2.style.display === "grid") && validCharacters.includes(e.key.toUpperCase())) {
+      playTune(e.key.toUpperCase());
+  }
 }
-// listeners upon click
+
+// Listeners upon click
 document.addEventListener("keydown", pressedKey);
-volume.addEventListener("input",handleVolume);
+volume.addEventListener("input", handleVolume);
