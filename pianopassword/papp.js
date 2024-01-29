@@ -27,7 +27,8 @@ function end(event) {
         stress.textContent = "Passwords do not match";
         pword.value = "";
         secWord.value = "";
-    } else {
+
+  } else {
         let url = `../success.html?email=${encodeURIComponent(email)}`;
         window.location.href = url;
     }
